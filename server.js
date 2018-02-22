@@ -9,7 +9,7 @@ app.get('/', (req, res) => res.send('Hello World!'))
 
 app.get('/animals', (req, res) => res.send('Animals'))
 */
-var routes = require('./api/routes/todoListRoutes');
+var routes = require('./api/routes/eventRoutes');
 routes(app);
 
 //app.listen(3000, () => console.log('Example app listening on port 3000!'))
