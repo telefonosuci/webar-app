@@ -12,4 +12,13 @@ module.exports = function(app) {
     .get(todoList.read_a_task)
     .put(todoList.update_a_task)
     .delete(todoList.delete_a_task);
+
+  app.get('/', (req, res) => res.send('Hello World!'));
+
+  app.get('/animals', (req, res) => res.send('Animals'));
+
+  app.route('/events').get(
+    res.send('Event list'
+  ));
+
 };
