@@ -21,7 +21,7 @@ module.exports = function(app) {
   app.get('/animals', (req, res) => res.send('Animals'));
 
   app.route('/events').get(
-    eventsController.list_all_tasks
+    eventsController.list_all
   );
 
 };
