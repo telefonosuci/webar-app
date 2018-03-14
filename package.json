@@ -2,6 +2,8 @@
   "name": "expressapp",
   "version": "1.0.0",
   "description": "Simple ExpressJS app",
+  "author": "Enrico Succhielli <telefonosuci@gmail.com>",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,15 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/telefonosuci/express.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/telefonosuci/express/issues"
   },
   "homepage": "https://github.com/telefonosuci/express#readme",
   "dependencies": {
     "express": "^4.16.2",
-    "mongoose": "^5.0.6"
+    "mongoose": "^5.0.6",
+    "npm": "^5.7.1"
   },
   "devDependencies": {
     "nodemon": "^1.15.1"
