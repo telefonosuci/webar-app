@@ -13,6 +13,9 @@
     "description": {
       "type": "string"
     },
+    "type": {
+      "type": "string"
+    },
     "date": {
       "type": "date"
     }
