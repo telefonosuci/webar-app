@@ -1,13 +1,13 @@
 {
-  "name": "expressapp",
+  "name": "LoopbackSalesApp",
   "version": "1.0.0",
   "description": "Simple ExpressJS app",
   "author": "Enrico Succhielli <telefonosuci@gmail.com>",
   "license": "ISC",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,11 @@
   "homepage": "https://github.com/telefonosuci/express#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "loopback": "^3.21.0",
+    "loopback-boot": "^2.27.1",
+    "loopback-component-explorer": "^6.2.0",
     "mongoose": "^5.0.6",
-    "npm": "^5.7.1"
+    "npm": "^5.10.0"
   },
   "devDependencies": {
     "nodemon": "^1.15.1"
