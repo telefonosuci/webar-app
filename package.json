@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/telefonosuci/express#readme",
   "dependencies": {
+    "@mean-expert/loopback-component-realtime": "^1.0.1",
     "compression": "^1.7.3",
     "cors": "^2.8.4",
     "express": "^4.16.2",
@@ -29,6 +30,7 @@
     "npm": "^5.10.0"
   },
   "devDependencies": {
+    "@mean-expert/loopback-sdk-builder": "^2.3.1",
     "nodemon": "^1.15.1"
   }
 }
