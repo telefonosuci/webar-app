@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
-    "postinstall": "ng build"
+    "postinstall": "cd frontend && ng build"
   },
   "repository": {
     "type": "git",
