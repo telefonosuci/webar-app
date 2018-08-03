@@ -28,6 +28,9 @@
     "loopback-boot": "^2.27.1",
     "loopback-component-explorer": "^6.2.0",
     "mongoose": "^5.0.6",
+    "@angular/cli": "~1.7.4",
+    "@angular/compiler-cli": "^5.2.0",
+    "@angular/language-service": "^5.2.0",
     "npm": "^5.10.0"
   },
   "devDependencies": {
