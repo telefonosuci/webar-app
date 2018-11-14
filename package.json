@@ -1,14 +1,14 @@
 {
-  "name": "LoopbackSalesApp",
+  "name": "LoopbackWebarApp",
   "version": "1.0.0",
-  "description": "Simple ExpressJS app",
+  "description": "Loopback Application",
   "author": "Enrico Succhielli <telefonosuci@gmail.com>",
   "license": "ISC",
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
-    "postinstall": "cd frontend && ng build"
+    "postinstall": "ng build"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,15 @@
   },
   "homepage": "https://github.com/telefonosuci/express#readme",
   "dependencies": {
+    "@angular/animations": "^7.0.3",
+    "@angular/cli": "~7.0.5",
+    "@angular/common": "^7.0.3",
+    "@angular/compiler": "^7.0.3",
+    "@angular/core": "^7.0.3",
+    "@angular/forms": "^7.0.3",
+    "@angular/http": "^7.0.3",
+    "@angular/platform-browser": "^7.0.3",
+    "@angular/platform-browser-dynamic": "^7.0.3",
     "@mean-expert/loopback-component-realtime": "^1.0.1",
     "compression": "^1.7.3",
     "cors": "^2.8.4",
@@ -28,13 +37,31 @@
     "loopback-boot": "^2.27.1",
     "loopback-component-explorer": "^6.2.0",
     "mongoose": "^5.0.6",
-    "@angular/cli": "~1.7.4",
-    "@angular/compiler-cli": "^5.2.0",
-    "@angular/language-service": "^5.2.0",
-    "npm": "^5.10.0"
+    "npm": "^5.10.0",
+    "rxjs": "^6.3.3",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^0.10.5",
+    "@angular/cli": "~7.0.5",
+    "@angular/compiler-cli": "^7.0.3",
+    "@angular/language-service": "^7.0.3",
     "@mean-expert/loopback-sdk-builder": "^2.3.1",
-    "nodemon": "^1.15.1"
+    "@types/jasmine": "~2.8.3",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/node": "~10.12.7",
+    "codelyzer": "^4.0.1",
+    "jasmine-core": "~3.3.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~3.1.1",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "^2.0.4",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^1.4.0",
+    "nodemon": "^1.15.1",
+    "protractor": "~5.4.1",
+    "ts-node": "~7.0.1",
+    "tslint": "~5.11.0",
+    "typescript": "^3.1.6"
   }
 }
