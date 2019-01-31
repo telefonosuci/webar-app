@@ -1,4 +1,4 @@
-FROM node:carbon
+FROM node:8.11.4
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -13,7 +13,7 @@ RUN npm install
 # RUN npm install --only=production
 
 # Bundle app source
-COPY . .
+COPY . ./
 
-EXPOSE 3000
-CMD [ "node", "." ]
+EXPOSE 3001
+CMD [ "npm", "start" ]

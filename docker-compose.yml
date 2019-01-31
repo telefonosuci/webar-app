@@ -1,0 +1,47 @@
+version: '2'
+services:
+  	webar-app:
+        build: .
+        container_name: "webar-app"
+        image: webae-app/latest
+        environment:
+            - NODE_ENV=development
+            - FOO=bar
+        volumes:
+          	- .:/usr/src/app
+          	- /usr/src/app/node_modules
+        ports:
+            - 3001:3001
+        links:
+          	- mongodb
+          	- mysqldb
+       depends_on:
+          	- mongodb
+          	- mysqldb
+        depends_on:
+            - mongodb
+            - mysqldb
+  	mysqldb:
+    	image: mysql:5.7.22
+    	ports:
+      		- 4306:3306
+    	environment:
+      		- MYSQL_DATABASE=epic-game
+      		- MYSQL_USER=admin
+      		- MYSQL_PASSWORD=admin
+      		- MYSQL_ROOT_PASSWORD=root
+    	volumes:
+      		- ./etc/mysql:/etc/mysql/conf.d
+      		- mysqldata:/var/lib/mysql
+    	container_name: mysqldb
+  	mongodb:
+    	image: mongo:3.2.21
+      	container_name: mongodb
+      	environment:
+        	- MONGO_DATA_DIR=/data/db
+        	- MONGO_LOG_DIR=/dev/null
+      	volumes:
+        	- mongodata:/data/db
+      	ports:
+        	- 27017:27017
+
