@@ -1,19 +1,20 @@
-FROM node:8.11.4
+FROM node:8.4
 
-# Create app directory
-WORKDIR /usr/src/app
+RUN node -v && npm -v
+RUN npm install -g bower grunt-cli buffertools semver loopback-cli loopback-sdk-angular-cli --unsafe-perm
+RUN bower --version && grunt --version && semver --help
+RUN ["mkdir", "/webarapp"]
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package*.json ./
+ADD ./ /webarapp
+
+WORKDIR /webarapp
 
 RUN npm install
-# If you are building your code for production
-# RUN npm install --only=production
+RUN bower install --allow-root
 
-# Bundle app source
-COPY . ./
+#RUN chmod 600 /webarapp/server/bootstrap/FastwebSSH/eloqua_sftp_id_rsa
+#RUN chmod 600 /webarapp/server/bin/Sftp/FastwebSSH/eloqua_sftp_id_rsa
 
-EXPOSE 3001
-CMD [ "npm", "start" ]
+EXPOSE 3000-3001
+
+ENTRYPOINT ["node", "."]
