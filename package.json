@@ -20,6 +20,8 @@
     "@angular/platform-browser": "^7.1.0",
     "@angular/platform-browser-dynamic": "^7.1.0",
     "@mean-expert/loopback-component-realtime": "^1.0.2",
+    "@types/jest": "^23.3.13",
+    "@types/mocha": "^5.2.5",
     "compression": "^1.7.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
