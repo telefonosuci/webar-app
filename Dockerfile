@@ -10,7 +10,6 @@ ADD ./ /webarapp
 WORKDIR /webarapp
 
 RUN npm install
-RUN bower install --allow-root
 
 #RUN chmod 600 /webarapp/server/bootstrap/FastwebSSH/eloqua_sftp_id_rsa
 #RUN chmod 600 /webarapp/server/bin/Sftp/FastwebSSH/eloqua_sftp_id_rsa
