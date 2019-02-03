@@ -1,12 +1,26 @@
 var loopback = require('loopback');
 var boot = require('loopback-boot');
 var app = module.exports = loopback();
+var path = require('path');
 
 app.start = function () {
-  
+
   // start the web server
   return app.listen(function () {
-    
+
+
+
+  var staticPath = path.resolve(__dirname, '../client/');
+  app.use(loopback.static(staticPath));
+  app.use('/api', loopback.rest());
+  app.all('/*', function(req, res, next) {
+      // Just send the index.html for other files to support HTML5Mode
+      res.sendFile('index.html', { root: path.resolve(__dirname, '../client/') });
+  });
+
+
+
+
     //app.emit('started');
     var baseUrl = app.get('url').replace(/\/$/, '');
     console.log('Web server listening at: %s', baseUrl);
