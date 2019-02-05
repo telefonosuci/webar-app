@@ -15,7 +15,9 @@ export class CoinDeskService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getBitcoinRate(): Observable<any> {
-    return this.httpClient.get(this.coinDeskUrl + '/v1/bpi/currentprice/CNY.json');
+  public getBitcoinRate() {
+    var coinDeskUrl = 'https://api.coindesk.com';
+    return this.httpClient.get(coinDeskUrl + '/v1/bpi/currentprice/CNY.json');
   }
 }
+
