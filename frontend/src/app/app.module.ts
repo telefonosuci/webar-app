@@ -4,15 +4,21 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { EventListComponent } from './components/event-list/event-list.component';
+import { AppRoutingModule } from './app-routing.module';
+import { CoinDashboardComponent } from './components/coin-dashboard/coin-dashboard.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventListComponent
+    EventListComponent,
+    CoinDashboardComponent,
+    NavigationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

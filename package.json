@@ -19,6 +19,7 @@
     "@angular/http": "^7.1.0",
     "@angular/platform-browser": "^7.1.0",
     "@angular/platform-browser-dynamic": "^7.1.0",
+    "@angular/router": "^7.2.3",
     "@mean-expert/loopback-component-realtime": "^1.0.2",
     "@types/jest": "^23.3.13",
     "@types/mocha": "^5.2.5",

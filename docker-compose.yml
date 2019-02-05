@@ -5,6 +5,8 @@ services:
         ports:
             - 3001:3001
         container_name: webar-app
+        volumes:
+            - /Users/enricosucchielli/Repositories/Heroku/webar-app:/webarapp
         links:
             - webar-mongodb
             - webar-mysqldb

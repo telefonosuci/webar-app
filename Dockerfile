@@ -5,7 +5,7 @@ RUN npm install -g bower grunt-cli buffertools semver loopback-cli loopback-sdk-
 RUN bower --version && grunt --version && semver --help
 RUN ["mkdir", "/webarapp"]
 
-ADD ./ /webarapp
+ADD . /webarapp
 
 WORKDIR /webarapp
 
@@ -16,4 +16,4 @@ RUN npm install
 
 EXPOSE 3000-3001
 
-ENTRYPOINT ["node", "."]
+#ENTRYPOINT ["node", "."]
