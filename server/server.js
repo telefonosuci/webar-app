@@ -8,18 +8,10 @@ app.start = function () {
   // start the web server
   return app.listen(function () {
 
-
-
-  var staticPath = path.resolve(__dirname, '../client/');
-  app.use(loopback.static(staticPath));
-  app.use('/api', loopback.rest());
-  app.all('/*', function(req, res, next) {
-      // Just send the index.html for other files to support HTML5Mode
-      res.sendFile('index.html', { root: path.resolve(__dirname, '../client/') });
-  });
-
-
-
+    var staticPath = path.resolve(__dirname, '../public/');
+    app.set('view engine', 'pug');
+    app.use(loopback.static(staticPath));
+    app.use('/api', loopback.rest());
 
     //app.emit('started');
     var baseUrl = app.get('url').replace(/\/$/, '');
@@ -29,6 +21,7 @@ app.start = function () {
       var explorerPath = app.get('loopback-component-explorer').mountPath;
       console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
     }
+
   });
 };
 

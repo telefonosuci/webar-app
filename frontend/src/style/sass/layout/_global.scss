@@ -1,0 +1,17 @@
+.netar-app {
+  &__main-container {
+    background-color: gray;
+    padding: 20px;
+  }
+
+  &__main-content {
+    background-color: lightgray;
+  }
+}
+
+.dc-layout {
+  &__page-inner-container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}

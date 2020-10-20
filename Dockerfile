@@ -1,8 +1,8 @@
 FROM node:8.4
 
 RUN node -v && npm -v
-RUN npm install -g bower grunt-cli buffertools semver loopback-cli loopback-sdk-angular-cli --unsafe-perm
-RUN bower --version && grunt --version && semver --help
+#RUN npm install -g bower grunt-cli buffertools semver loopback-cli loopback-sdk-angular-cli --unsafe-perm
+#RUN bower --version && grunt --version && semver --help
 RUN ["mkdir", "/webarapp"]
 
 ADD . /webarapp
@@ -16,4 +16,4 @@ RUN npm install
 
 EXPOSE 3000-3001
 
-#ENTRYPOINT ["node", "."]
+ENTRYPOINT ["node", "."]

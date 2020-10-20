@@ -1,0 +1,45 @@
+.netar-app__main-container {
+  background-color: gray;
+  padding: 20px; }
+
+.netar-app__main-content {
+  background-color: lightgray; }
+
+.dc-layout__page-inner-container {
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.netar-app-checkout__setion-address {
+  background-color: gray; }
+
+.dc-chat__video-box {
+  display: flex;
+  justify-content: center; }
+
+.dc-chat__container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px; }
+
+.dc-chat__messages-box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 16px 10px #888; }
+
+.dc-chat__textarea-box {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0; }
+
+.dc-chat__textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 5px; }
+
