@@ -16,12 +16,10 @@ const vendors = 'vendors';
 // and keeps everything inside vendors bundle
 
 const entriesNames = [
-  // ESSERBELLA ENTRIES //
   'global',
   'header',
   'footer',
-  'chat',
-  // ESSELUNGA ENTRIES //
+  'homepage',
 ];
 const entries = {};
 

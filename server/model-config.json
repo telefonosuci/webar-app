@@ -32,7 +32,11 @@
     "dataSource": "db",
     "public": false
   },
-  "event": {
+  "Event": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Message": {
     "dataSource": "db",
     "public": true
   }

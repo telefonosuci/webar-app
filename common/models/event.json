@@ -1,5 +1,5 @@
 {
-  "name": "event",
+  "name": "Event",
   "plural": "events",
   "base": "PersistedModel",
   "idInjection": true,

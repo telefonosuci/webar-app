@@ -1,4 +1,4 @@
-module.exports = function(Customer) {
+module.exports = function(Event) {
     // Customer object is available 
     //...
 }

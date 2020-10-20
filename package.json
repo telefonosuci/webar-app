@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
     "postinstall": "echo \"No script specified\"",
-    "build-fe": "cd frontend && NODE_ENV=development webpack --mode='production'"
+    "build-fe": "cd frontend && NODE_ENV=development webpack --mode='development'"
   },
   "dependencies": {
     "@babel/polyfill": "7.0.0",
